@@ -1,0 +1,4 @@
+product article should have same height,
+should have images on side of main product image,
+main image should have zoomer,
+product page should have option for product video
