@@ -14,7 +14,7 @@
 
 	-- Website Colors White, Black, Orange
 
-	-- Social media icons, Facebook, Instagram, Youtube, Pintirst.
+	-- Social media icons, Facebook, Instagram, Youtube, Pinterest.
 
 	-- Also design products description page
 
