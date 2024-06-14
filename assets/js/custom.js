@@ -199,8 +199,79 @@
     },
   });
 
-  // Product Slider Departments JS
-  var productSliderCol4 = new Swiper(
+  // Product Categories Slider Col4 Js
+  var productSliderCategories = new Swiper(
+    ".product-slider-col4-container-categories",
+    {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      allowTouchMove: true,
+      autoplay: {
+        delay: 2250,
+        pauseOnMouseEnter: true,
+      },
+      spaceBetween: 16,
+      speed: 600,
+      navigation: {
+        nextEl: ".product-swiper-btn-next",
+        prevEl: ".product-swiper-btn-prev",
+      },
+      breakpoints: {
+        1400: {
+          slidesPerView: 5,
+          spaceBetween: 16,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 16,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 2250,
+            pauseOnMouseEnter: true,
+          },
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 16,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 2250,
+            pauseOnMouseEnter: true,
+          },
+        },
+        734: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 2250,
+            pauseOnMouseEnter: true,
+          },
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 2250,
+            pauseOnMouseEnter: true,
+          },
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 2250,
+            pauseOnMouseEnter: true,
+          },
+        },
+      },
+    }
+  );
+
+  //Slider Departments JS
+  var productSliderDepartments = new Swiper(
     ".product-slider-col4-container-departments",
     {
       slidesPerView: 6,

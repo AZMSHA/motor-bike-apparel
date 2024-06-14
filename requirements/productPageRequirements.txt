@@ -5,23 +5,3 @@ product page should have option for product video
 
 
 
-.parallax.profile-section .profile-section-right,
-.parallax.profile-section .profile-section-left {
-  display: flex;
-  align-items: center;
-}
-
-.parallax.profile-section .profile-section-right {
-  justify-content: flex-end;
-}
-
-@media only screen and (max-width: 991px) {
-  .parallax.profile-section .profile-section-right {
-    padding-top: 16px;
-    justify-content: center;
-  }
-}
-
-.parallax.profile-section .profile-section-left {
-  justify-content: flex-start;
-}
