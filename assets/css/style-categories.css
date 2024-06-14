@@ -1,0 +1,439 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+:root {
+  --font-family-pri: "Roboto", sans-serif;
+  --font-family-sec: "Nunito Sans", sans-serif;
+  --font-family-ter: Verdana, sans-serif;
+  --custom-black: rgb(0, 0, 0);
+  --color-titles: rgb(0, 0, 0);
+  --custom-white: rgb(255, 255, 255);
+  --custom-white-2: rgb(255, 255, 255);
+  --body-white: rgb(241, 241, 241);
+  --custom-gray: rgb(41, 41, 41);
+  --prices-color-gray: rgb(61, 61, 61);
+  --custom-gray-2: rgb(41, 41, 41);
+  --custom-orange2: rgb(255, 115, 14);
+  --custom-orange: rgb(223, 93, 0);
+  --alibaba-orange: #ff6a00;
+  --accent-color: rgba(255, 114, 14, 0.603);
+  --footer-text-color: white;
+  --footer-sec-color: rgb(41, 41, 41);
+}
+
+.widget-search {
+  position: relative;
+}
+
+.widget {
+  background: #fff none repeat scroll 0 0;
+  width: 100%;
+}
+
+.widget-categories {
+  background: #fff none repeat scroll 0 0;
+  width: 100%;
+}
+
+.widget-info {
+  padding: 20px 30px;
+}
+
+.widget-info.product-cat {
+  background: #fff none repeat scroll 0 0;
+  height: 290px;
+  padding: 15px 20px 20px 10px;
+}
+
+.widget-banner .widget-info {
+  padding: 15px;
+}
+
+.product-option {
+  background: #fff none repeat scroll 0 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+}
+
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input[type="text"] {
+  background: #f6f6f6 none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: none;
+  color: #999;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  outline: none;
+}
+
+.widget-search input {
+  background: #fff none repeat scroll 0 0;
+  height: 50px;
+  margin-bottom: 0;
+  padding: 0 65px 0 20px;
+}
+
+button {
+  border-radius: 0;
+}
+
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+
+.widget-search button {
+  color: #999;
+  font-size: 20px;
+  line-height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.widget-search button:hover {
+  color: var(--custom-orange);
+}
+
+.widget-title h4 {
+  border-bottom: 2px solid #f6f6f6;
+  color: #666;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 0;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+
+.product-cat .treeview {
+  padding-left: 20px;
+}
+
+.widget-banner-img a {
+  display: block;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.pagination {
+  --bs-pagination-color: var(--bs-link-color);
+  --bs-pagination-hover-color: var(--bs-link-hover-color);
+  --bs-pagination-focus-color: var(--bs-link-hover-color);
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pagination {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  height: 50px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.zmdi {
+  display: inline-block;
+  font: normal normal normal 14px/1 "Material-Design-Iconic-Font";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zmdi-search:before {
+  content: "\f1c3";
+}
+
+.price_slider_amount {
+  margin-bottom: 10px;
+}
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+.ui-slider-horizontal {
+  height: 0.8em;
+}
+
+.ui-widget {
+  font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+.ui-widget-content {
+  border: 1px solid #a6c9e2;
+  background: #fcfdfd
+    url("https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_inset-hard_100_fcfdfd_1x100.png")
+    50% bottom repeat-x;
+  color: #222;
+}
+
+.ui-corner-all {
+  border-top-left-radius: 5px;
+}
+
+.ui-corner-all {
+  border-top-right-radius: 5px;
+}
+
+.ui-corner-all {
+  border-bottom-left-radius: 5px;
+}
+
+.ui-corner-all {
+  border-bottom-right-radius: 5px;
+}
+
+.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+  background: #dcdcdc none repeat scroll 0 0;
+  border: medium none;
+  height: 3px;
+}
+
+.shop-tab > li {
+  float: left;
+  margin-right: 20px;
+}
+
+.pagination ul {
+  display: inline-block;
+}
+
+.product-cat .treeview li span {
+  color: #666;
+  display: block;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.product-cat .treeview li span:hover {
+  color: var(--custom-orange);
+}
+
+.product-cat .treeview li span:hover,
+.product-cat .treeview li.collapsable span {
+  color: var(--custom-orange);
+}
+
+.price_slider_amount > input {
+  background: #fff none repeat scroll 0 0;
+  border: medium none;
+  margin: 0 5px 0 0;
+  padding: 0;
+  width: auto;
+}
+
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+.price_slider_amount > input#amount {
+  margin-right: 0;
+  width: 90px;
+}
+
+.ui-widget-header {
+  border: 1px solid #4297d7;
+  background: #5c9ccc
+    url("https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png")
+    50% 50% repeat-x;
+  color: #fff;
+  font-weight: bold;
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-range.ui-widget-header.ui-corner-all {
+  background: #c87065 none repeat scroll 0 0;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.3em;
+  margin-left: -0.6em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  border: 1px solid #c5dbec;
+  background: #dfeffc
+    url("https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_glass_85_dfeffc_1x400.png")
+    50% 50% repeat-x;
+  font-weight: bold;
+  color: #2e6e9e;
+}
+
+.ui-slider-handle.ui-state-default.ui-corner-all {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid #c87065;
+  height: 12px;
+  width: 12px;
+}
+
+.size-filter ul li a {
+  background: #f6f6f6 none repeat scroll 0 0;
+  display: block;
+  font-weight: 700;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  width: 34px;
+}
+
+.size-filter ul li a:hover {
+  background: var(--custom-orange);
+  color: #fff;
+}
+
+.size-filter ul li a:hover,
+.size-filter ul li.active a {
+  background: var(--custom-orange);
+  color: #fff;
+}
+
+.shop-tab li a {
+  color: #999;
+  display: block;
+  font-size: 20px;
+}
+
+.shop-tab li a.active {
+  color: var(--custom-orange);
+}
+
+.pagination ul li {
+  display: block;
+  float: left;
+  padding: 10px 0;
+}
+
+.color-filter ul li.active span.color,
+.color-filter ul li:hover span.color {
+  outline: 1px solid #d6b98c;
+  outline-offset: 1px;
+}
+
+.zmdi-view-module:before {
+  content: "\f321";
+}
+
+.zmdi-view-list:before {
+  content: "\f320";
+}
+
+.pagination ul li a {
+  color: #666;
+  display: block;
+  line-height: 30px;
+  padding: 0 6px;
+}
+
+.pagination ul li:hover a {
+  color: var(--custom-orange);
+}
+
+.pagination ul li.active a,
+.pagination ul li:hover a {
+  color: var(--custom-orange);
+}
+
+.product-cat .treeview li > ul > li > a {
+  color: #999;
+  display: block;
+  font-size: 13px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.product-cat .treeview li > ul > li > a {
+  color: #999;
+}
+
+.product-cat .treeview li > a:hover,
+.product-cat .treeview li > ul > li > a:hover {
+  color: var(--custom-orange);
+}
+
+.pagination ul li a i {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.zmdi-long-arrow-left:before {
+  content: "\f2ff";
+}
+
+.zmdi-long-arrow-right:before {
+  content: "\f301";
+}

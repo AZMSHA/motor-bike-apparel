@@ -20,9 +20,9 @@
 
 	-- You will add main categories but sub-categories we will add this option customized
 
-	-- 	Translater Langues
-	--	Right Click Off on Product---- https://firstracing.ru/catalog/resurdgence-hood/
-	--	Disable OnClick
+	-- 	Translator Languages
+	--	Right Click Off on Product---- https://firstracing.ru/catalog/resurdgence-hood/  --Disable right Click
+	
 ---------------------------------------------------------------------------------------------------------
 
 	-- Front Slider
