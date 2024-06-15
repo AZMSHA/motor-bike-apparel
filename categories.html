@@ -32,7 +32,15 @@
     <!--== Bootstrap CSS ==-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <!--== Font Awesome Min Icon CSS ==-->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
     <!--== Pe7 Stroke Icon CSS ==-->
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <!--== Swiper CSS ==-->
@@ -79,7 +87,7 @@
           </div>
         </div>
         <div class="header-middle">
-          <div class="container-fluid pt--0 pb--0">
+          <div class="container pt--0 pb--0">
             <div class="row align-items-center">
               <div class="col-12">
                 <div class="header-middle-align">
@@ -128,7 +136,7 @@
                       <a href="index.html">
                         <img
                           class="logo-main"
-                          src="assets/img/logo.webp"
+                          src="assets/img/logo-light.webp"
                           width="131"
                           height="34"
                           alt="Logo"
@@ -153,24 +161,8 @@
                           data-bs-target="#AsideOffcanvasSearch"
                           aria-controls="AsideOffcanvasSearch"
                         >
-                          <i class="pe-7s-search icon"></i>
+                          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                         </button>
-                      </div>
-                      <div class="shopping-alibaba">
-                        <a
-                          class="shopping-alibaba-btn"
-                          href="https://www.alibaba.com/"
-                        >
-                          <svg
-                            class="icon-alibaba-b"
-                            viewBox="0 0 1024 1024"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M602.9 669.8c-37.2 2.6-33.6-17.3-11.5-46.2 50.4-67.2 143.7-158.5 147.9-225.2 5.8-86.6-81.3-113.4-171-113.4-62.4 1.6-127 18.9-171 34.6-151.6 53.5-246.6 137.5-306.9 232-62.4 93.4-43 183.2 91.8 185.8 101.8-4.2 170.5-32.5 239.7-68.2.5 0-192.5 55.1-263.9 14.7-7.9-4.2-15.7-10-17.8-26.2 0-33.1 54.6-67.7 86.6-78.7v-56.7c64.5 22.6 140.6 16.3 205.7-32 2.1 5.8 4.2 13.1 3.7 21h11c2.6-22.6-12.6-44.6-37.8-46.2 7.3 5.8 12.6 10.5 15.2 14.7l-1 1-.5.5c-83.9 58.8-165.3 31.5-173.1 29.9l46.7-45.7-13.1-33.1c92.9-32.5 169.5-56.2 296.9-78.7l-28.5-23 14.7-8.9c75.5 21 126.4 36.7 123.8 76.6-1 6.8-3.7 14.7-7.9 23.1C660.1 466.1 594 538 567.2 569c-17.3 20.5-34.6 39.4-46.7 58.3-13.6 19.4-20.5 37.3-21 53.5 2.6 131.8 391.4-61.9 468-112.9-111.7 47.8-232.9 93.5-364.6 101.9zm85-302.9c2.8 5.2 4.1 11.6 4.1 19.1-.1-6.8-1.4-13.3-4.1-19.1z"
-                            />
-                          </svg>
-                        </a>
                       </div>
                       <div class="shopping-cart">
                         <button
@@ -180,10 +172,12 @@
                           data-bs-target="#AsideOffcanvasCart"
                           aria-controls="offcanvasRightLabel"
                         >
-                          <i class="pe-7s-shopbag icon"></i>
+                          <i class="fa-sharp fa-solid fa-bag-shopping"></i>
                           <sup class="shop-count">02</sup>
+                          <span class="d-none d-lg-inline">Shopping Cart</span>
                         </button>
                       </div>
+
                       <button
                         class="btn-menu"
                         type="button"
@@ -191,8 +185,27 @@
                         data-bs-target="#AsideOffcanvasMenu"
                         aria-controls="AsideOffcanvasMenu"
                       >
-                        <i class="pe-7s-menu"></i>
+                        <i class="fa-sharp fa-solid fa-bars"></i>
                       </button>
+                      <div class="shopping-alibaba">
+                        <a href="https://www.alibaba.com/">
+                          <div>
+                            <svg
+                              viewBox="60 140 680 680"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M602.9 669.8c-37.2 2.6-33.6-17.3-11.5-46.2 50.4-67.2 143.7-158.5 147.9-225.2 5.8-86.6-81.3-113.4-171-113.4-62.4 1.6-127 18.9-171 34.6-151.6 53.5-246.6 137.5-306.9 232-62.4 93.4-43 183.2 91.8 185.8 101.8-4.2 170.5-32.5 239.7-68.2.5 0-192.5 55.1-263.9 14.7-7.9-4.2-15.7-10-17.8-26.2 0-33.1 54.6-67.7 86.6-78.7v-56.7c64.5 22.6 140.6 16.3 205.7-32 2.1 5.8 4.2 13.1 3.7 21h11c2.6-22.6-12.6-44.6-37.8-46.2 7.3 5.8 12.6 10.5 15.2 14.7l-1 1-.5.5c-83.9 58.8-165.3 31.5-173.1 29.9l46.7-45.7-13.1-33.1c92.9-32.5 169.5-56.2 296.9-78.7l-28.5-23 14.7-8.9c75.5 21 126.4 36.7 123.8 76.6-1 6.8-3.7 14.7-7.9 23.1C660.1 466.1 594 538 567.2 569c-17.3 20.5-34.6 39.4-46.7 58.3-13.6 19.4-20.5 37.3-21 53.5 2.6 131.8 391.4-61.9 468-112.9-111.7 47.8-232.9 93.5-364.6 101.9zm85-302.9c2.8 5.2 4.1 11.6 4.1 19.1-.1-6.8-1.4-13.3-4.1-19.1z"
+                              />
+                            </svg>
+                            <img
+                              src="assets/img/icons/gold-supplier.png"
+                              alt="Go to our Alibaba Page"
+                            />
+                          </div>
+                          <span class="d-none d-lg-inline">Gold supplier</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -353,7 +366,7 @@
         <div class="product-area pt-80 pb-80 product-style-2 snipcss-2i83L">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3 order-2 order-lg-1">
+              <div class="col-lg-3 order-1 mt-30 widgets-area">
                 <aside class="widget widget-search mb-30">
                   <form action="#">
                     <input type="text" placeholder="Search here..." />
@@ -441,7 +454,7 @@
                   </div>
                 </aside>
               </div>
-              <div class="col-lg-9 order-1 order-lg-2">
+              <div class="col-lg-9 order-2">
                 <div class="shop-content mt-tab-30 mb-30 mb-lg-0">
                   <div class="showing text-end d-none d-md-block">
                     <p class="mb-0">Showing 01-09 of 17 Results</p>
@@ -458,7 +471,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -513,7 +529,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -568,7 +587,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -623,7 +645,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -678,7 +703,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -733,7 +761,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -788,7 +819,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -843,7 +877,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"
@@ -898,7 +935,10 @@
                           <div class="product-item">
                             <div class="inner-content">
                               <div class="product-thumb">
-                                <a href="single-product.html">
+                                <a
+                                  class="full-width"
+                                  href="single-product.html"
+                                >
                                   <img
                                     src="assets/img/shop/1.webp"
                                     alt="Image-HasTech"

@@ -8,20 +8,26 @@
   --font-family-pri: "Roboto", sans-serif;
   --font-family-sec: "Nunito Sans", sans-serif;
   --font-family-ter: Verdana, sans-serif;
-  --custom-black: rgb(0, 0, 0);
+  --custom-black: black;
   --color-titles: rgb(0, 0, 0);
-  --custom-white: rgb(255, 255, 255);
-  --custom-white-2: rgb(255, 255, 255);
-  --body-white: rgb(241, 241, 241);
+  --theme-color: rgb(0, 0, 0);
+  --font-color: rgb(240, 240, 240);
+  --font-color-dark: rgb(61, 61, 61);
+  --custom-white: rgb(240, 240, 240);
+  --custom-white-2: rgb(240, 240, 240);
+  --icons-color: rgb(240, 240, 240);
   --custom-gray: rgb(41, 41, 41);
   --prices-color-gray: rgb(61, 61, 61);
   --custom-gray-2: rgb(41, 41, 41);
   --custom-orange2: rgb(255, 115, 14);
+  --section-desc-color: rgb(240, 240, 240);
   --custom-orange: rgb(223, 93, 0);
   --alibaba-orange: #ff6a00;
-  --accent-color: rgba(255, 114, 14, 0.603);
-  --footer-text-color: white;
+  --translucent-accent-color: rgba(255, 114, 14, 0.603);
+  --footer-text-color: rgb(240, 240, 240);
   --footer-sec-color: rgb(41, 41, 41);
+  --widget-text-color: rgb(61, 61, 61);
+  --widget-bg-color: rgb(240, 240, 240);
 }
 
 .widget-search {
@@ -29,12 +35,14 @@
 }
 
 .widget {
-  background: #fff none repeat scroll 0 0;
+  background: var(--widget-bg-color) none repeat scroll 0 0;
   width: 100%;
+  border-radius: 8px;
 }
 
 .widget-categories {
-  background: #fff none repeat scroll 0 0;
+  background: var(--widget-bg-color) none repeat scroll 0 0;
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -43,9 +51,10 @@
 }
 
 .widget-info.product-cat {
-  background: #fff none repeat scroll 0 0;
-  height: 290px;
+  background: var(--widget-bg-color) none repeat scroll 0 0;
+  height: 302px;
   padding: 15px 20px 20px 10px;
+  border-radius: 8px;
 }
 
 .widget-banner .widget-info {
@@ -53,7 +62,7 @@
 }
 
 .product-option {
-  background: #fff none repeat scroll 0 0;
+  background: var(--theme-color) none repeat scroll 0 0;
   height: 50px;
   line-height: 50px;
   padding: 0 30px;
@@ -67,10 +76,10 @@ input {
 }
 
 input[type="text"] {
-  background: #f6f6f6 none repeat scroll 0 0;
+  background: var(--widget-bg-color) none repeat scroll 0 0;
   border: medium none;
   box-shadow: none;
-  color: #999;
+  color: var(--widget-text-color);
   height: 40px;
   margin-bottom: 15px;
   padding: 0 20px;
@@ -80,10 +89,11 @@ input[type="text"] {
 }
 
 .widget-search input {
-  background: #fff none repeat scroll 0 0;
+  background: var(--widget-bg-color) none repeat scroll 0 0;
   height: 50px;
   margin-bottom: 0;
   padding: 0 65px 0 20px;
+  border-radius: 8px;
 }
 
 button {
@@ -113,7 +123,7 @@ button {
 }
 
 .widget-search button {
-  color: #999;
+  color: var(--widget-text-color);
   font-size: 20px;
   line-height: 50px;
   position: absolute;
@@ -131,8 +141,8 @@ button:not(:disabled) {
 }
 
 .widget-title h4 {
-  border-bottom: 2px solid #f6f6f6;
-  color: #666;
+  border-bottom: 2px solid var(--widget-text-color);
+  color: var(--widget-text-color);
   font-size: 16px;
   font-weight: 700;
   height: 50px;
@@ -168,7 +178,7 @@ button:not(:disabled) {
 }
 
 .pagination {
-  background: #fff none repeat scroll 0 0;
+  background: var(--theme-color) none repeat scroll 0 0;
   display: block;
   height: 50px;
   margin: 0;
@@ -246,7 +256,7 @@ button:not(:disabled) {
 }
 
 .product-cat .treeview li span {
-  color: #666;
+  color: var(--widget-text-color);
   display: block;
   font-size: 14px;
   line-height: 25px;
@@ -265,7 +275,7 @@ button:not(:disabled) {
 }
 
 .price_slider_amount > input {
-  background: #fff none repeat scroll 0 0;
+  background: var(--theme-color) none repeat scroll 0 0;
   border: medium none;
   margin: 0 5px 0 0;
   padding: 0;
@@ -286,7 +296,7 @@ button:not(:disabled) {
   background: #5c9ccc
     url("https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png")
     50% 50% repeat-x;
-  color: #fff;
+  color: var(--theme-color);
   font-weight: bold;
 }
 
@@ -305,7 +315,7 @@ button:not(:disabled) {
 }
 
 .ui-slider-range.ui-widget-header.ui-corner-all {
-  background: #c87065 none repeat scroll 0 0;
+  background: var(--custom-orange) none repeat scroll 0 0;
 }
 
 .ui-slider .ui-slider-handle {
@@ -334,14 +344,14 @@ button:not(:disabled) {
 }
 
 .ui-slider-handle.ui-state-default.ui-corner-all {
-  background: #fff none repeat scroll 0 0;
-  border: 2px solid #c87065;
+  background: var(--theme-color) none repeat scroll 0 0;
+  border: 2px solid var(--custom-orange);
   height: 12px;
   width: 12px;
 }
 
 .size-filter ul li a {
-  background: #f6f6f6 none repeat scroll 0 0;
+  background: var(--font-color) none repeat scroll 0 0;
   display: block;
   font-weight: 700;
   height: 34px;
@@ -352,17 +362,17 @@ button:not(:disabled) {
 
 .size-filter ul li a:hover {
   background: var(--custom-orange);
-  color: #fff;
+  color: var(--theme-color);
 }
 
 .size-filter ul li a:hover,
 .size-filter ul li.active a {
   background: var(--custom-orange);
-  color: #fff;
+  color: var(--theme-color);
 }
 
 .shop-tab li a {
-  color: #999;
+  color: var(--font-color);
   display: block;
   font-size: 20px;
 }
@@ -379,7 +389,7 @@ button:not(:disabled) {
 
 .color-filter ul li.active span.color,
 .color-filter ul li:hover span.color {
-  outline: 1px solid #d6b98c;
+  outline: 1px solid var(--custom-orange);
   outline-offset: 1px;
 }
 
@@ -392,7 +402,7 @@ button:not(:disabled) {
 }
 
 .pagination ul li a {
-  color: #666;
+  color: var(--font-color);
   display: block;
   line-height: 30px;
   padding: 0 6px;
@@ -408,15 +418,11 @@ button:not(:disabled) {
 }
 
 .product-cat .treeview li > ul > li > a {
-  color: #999;
+  color: var(--widget-text-color);
   display: block;
   font-size: 13px;
   line-height: 25px;
   text-transform: capitalize;
-}
-
-.product-cat .treeview li > ul > li > a {
-  color: #999;
 }
 
 .product-cat .treeview li > a:hover,
