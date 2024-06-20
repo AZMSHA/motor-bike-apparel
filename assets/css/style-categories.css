@@ -4,6 +4,8 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
   --font-family-pri: "Roboto", sans-serif;
   --font-family-sec: "Nunito Sans", sans-serif;
@@ -12,21 +14,22 @@
   --color-titles: rgb(0, 0, 0);
   --theme-color: rgb(0, 0, 0);
   --font-color: rgb(240, 240, 240);
-  --font-color-dark: rgb(61, 61, 61);
   --custom-white: rgb(240, 240, 240);
   --custom-white-2: rgb(240, 240, 240);
   --icons-color: rgb(240, 240, 240);
-  --custom-gray: rgb(41, 41, 41);
-  --prices-color-gray: rgb(61, 61, 61);
-  --custom-gray-2: rgb(41, 41, 41);
-  --custom-orange2: rgb(255, 115, 14);
   --section-desc-color: rgb(240, 240, 240);
+  --footer-text-color: rgb(240, 240, 240);
+  --custom-gray: rgb(41, 41, 41);
+  --custom-gray-light: #bababa;
+  --prices-color-gray: rgb(61, 61, 61);
+  --widget-text-color: rgb(61, 61, 61);
+  --font-color-dark: rgb(61, 61, 61);
+  --custom-gray-2: rgb(41, 41, 41);
+  --footer-sec-color: rgb(41, 41, 41);
+  --custom-orange2: rgb(255, 115, 14);
   --custom-orange: rgb(223, 93, 0);
   --alibaba-orange: #ff6a00;
   --translucent-accent-color: rgba(255, 114, 14, 0.603);
-  --footer-text-color: rgb(240, 240, 240);
-  --footer-sec-color: rgb(41, 41, 41);
-  --widget-text-color: rgb(61, 61, 61);
   --widget-bg-color: rgb(240, 240, 240);
 }
 
