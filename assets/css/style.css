@@ -9,10 +9,13 @@
     * Header CSS
     * Home Slider CSS
     * Team CSS
+    * Size Chart CSS
+    * Gallery CSS
     * Brand Logo CSS
     * Form CSS
     * Blog CSS
     * Contact CSS
+    * Departments Section CSS
     * Footer CSS
 
 =====================================================================*/
@@ -448,6 +451,7 @@ table p {
   padding: 14px 28px 13px;
   font-size: 16px;
 }
+
 @media only screen and (max-width: 767px) {
   .btn-theme.btn-sm {
     padding: 11px 24px 11px;
@@ -700,6 +704,12 @@ table p {
 
 .mb--0 {
   margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .mb-lg-0 {
+    margin-bottom: 0 !important;
+  }
 }
 
 .mb-25 {
@@ -1280,23 +1290,30 @@ table p {
   display: flex;
   height: 100%;
   flex-direction: column;
+  padding-right: 35px;
+  align-items: center;
 }
 
 .section-title-aside .logo {
-  max-width: 60%;
+  max-width: 100px;
   margin-bottom: 16px;
+}
+
+.section-title-aside .title,
+.section-title-aside .desc {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section-title-aside {
+    padding-right: 0px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
   .section-title-aside {
     margin-bottom: 60px;
     justify-content: center;
-    align-items: center;
-  }
-
-  .section-title-aside .title,
-  .section-title-aside .desc {
-    text-align: center;
   }
 }
 
@@ -3900,6 +3917,49 @@ table p {
   .team-item .content p {
     font-size: 14px;
   }
+}
+
+/*
+-----------------------------------------------------------------------
+  Size Chart CSS
+-----------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) {
+  .size-chart-section .section-title.only-desc {
+    margin-top: 0rem !important;
+  }
+}
+
+.size-chart-section .size-chart-col .size-chart {
+  width: 100%;
+}
+
+.size-chart-section .size-chart-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+-----------------------------------------------------------------------
+  Gallery CSS
+-----------------------------------------------------------------------
+*/
+
+.gallery-category .gallery-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.gallery-category .gallery-category-title {
+  font-size: 2rem !important;
+  line-height: 1.2em;
+  margin-top: 2.5rem;
 }
 
 /*
@@ -11408,6 +11468,12 @@ s .product-item .inner-content .product-info .title a:hover {
   color: var(--color-titles);
 }
 
+/*
+-----------------------------------------------------------------------
+  Departments Section CSS
+-----------------------------------------------------------------------
+*/
+
 .departments .department-img img {
   width: 100%;
   aspect-ratio: 1.5 / 1;
@@ -11454,6 +11520,25 @@ s .product-item .inner-content .product-info .title a:hover {
   }
 }
 
+.newsletter .newsletter-form input[type="email"] {
+  height: 44px;
+  border: 1px solid rgb(172, 172, 172);
+  background-color: transparent;
+  font-size: 15px;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter .newsletter-form .newsletter-input {
+  vertical-align: middle;
+  background: #fff;
+  margin-right: 6px;
+  width: 25rem;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
 .newsletter.mobile section,
 .newsletter .mobile section {
   background-attachment: scroll !important;
@@ -11491,23 +11576,12 @@ s .product-item .inner-content .product-info .title a:hover {
   }
 }
 
-.newsletter input[type="email"] {
-  height: 44px;
-  border: 1px solid rgb(172, 172, 172);
-  background-color: transparent;
-  font-size: 15px;
-  -ms-box-shadow: none;
-  box-shadow: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.newsletter .newsletter-input {
-  vertical-align: middle;
-  background: #fff;
-  margin-right: 6px;
-  width: 25rem;
-  padding: 2rem 1rem;
-  border-radius: 8px;
+.newsletter .row .wrapper > p {
+  color: var(--font-color-dark);
+  line-height: 1.2em;
+  margin: 0px 0px 1em 0px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .newsletter .row > * {
@@ -11631,7 +11705,7 @@ s .product-item .inner-content .product-info .title a:hover {
   margin-left: 10px;
 }
 
-/*--Footer Newsletter CSS--*/
+/*--Footer Newsletter CSS ENDING--*/
 .footer-area {
   background-color: var(--custom-black);
 }

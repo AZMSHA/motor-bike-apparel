@@ -333,6 +333,69 @@
     }
   );
 
+  //Slider Galleries Page JS
+  var productSliderDepartments = new Swiper(
+    ".product-slider-col4-container-gallery",
+    {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      loop: true,
+      allowTouchMove: true,
+      autoplay: {
+        delay: 4000,
+        pauseOnMouseEnter: true,
+      },
+      spaceBetween: 30,
+      speed: 600,
+      navigation: {
+        nextEl: ".product-swiper-btn-next",
+        prevEl: ".product-swiper-btn-prev",
+      },
+      breakpoints: {
+        1400: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+      },
+    }
+  );
+
   // Product Slider Col4 Js
   var testimonialSlider = new Swiper(".testimonial-slider-container", {
     slidesPerView: 2,
@@ -360,6 +423,32 @@
   // Fancybox Js
   $(".image-popup").fancybox();
   $(".video-popup").fancybox();
+
+  Fancybox.bind("[data-fancybox]", {});
+
+  window.onload = function () {
+    const videoButtons = document.querySelectorAll(".btn-video-player");
+
+    videoButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const video = document.querySelector(button.dataset.video);
+        if (button.classList.contains("playing")) {
+          button.classList.remove("playing");
+          video.pause();
+        } else {
+          button.classList.add("playing");
+          video.play();
+        }
+      });
+
+      const btnPlayer = button;
+      const videoElement = document.querySelector(button.dataset.video);
+      videoElement.addEventListener("ended", function () {
+        btnPlayer.classList.remove("playing");
+        this.currentTime = 0;
+      });
+    });
+  };
 
   // Aos Js
   AOS.init({

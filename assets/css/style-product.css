@@ -11970,23 +11970,44 @@ img {
   box-shadow: 0 0 1.5625rem 0 rgba(34, 34, 34, 0.05);
 }
 
+.accordion-item {
+  color: var(--font-color);
+  background-color: transparent;
+  border: none;
+}
+
 .accordion-button {
   padding: 1.75rem 1.875rem 1.125rem;
-  border: 1px solid #eeeeee;
-  color: #222222;
-  background-color: #ffffff;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.375;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2em;
   outline: none;
 }
+
+@media only screen and (max-width: 767px) {
+  .accordion-button {
+    font-size: 1rem;
+  }
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 .accordion-button::after {
   content: none;
 }
 .accordion-button.collapsed {
   background-color: transparent;
-  color: #222222;
+  color: var(--font-color);
 }
+
+.accordion-button:not(.collapsed) {
+  color: var(--custom-orange);
+  background-color: transparent;
+}
+
 .accordion-button.collapsed .accordion-button__icon {
   transform: rotate(0deg);
 }
@@ -12001,7 +12022,6 @@ img {
   width: 0.875rem;
   height: 0.875rem;
   margin-left: auto;
-  fill: #222222;
   transform: rotate(90deg);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
