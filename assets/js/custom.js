@@ -424,8 +424,6 @@
   $(".image-popup").fancybox();
   $(".video-popup").fancybox();
 
-  Fancybox.bind("[data-fancybox]", {});
-
   window.onload = function () {
     const videoButtons = document.querySelectorAll(".btn-video-player");
 
