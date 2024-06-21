@@ -3948,6 +3948,30 @@ table p {
 -----------------------------------------------------------------------
 */
 
+.gallery-category .gallery-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-category .gallery-img::before {
+  position: absolute;
+  inset: 0px;
+  content: "";
+  background-color: black;
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+
+@media only screen and (max-width: 1199px) {
+  .gallery-category .gallery-img::before {
+    content: none;
+  }
+}
+
+.gallery-category .gallery-img:hover::before {
+  opacity: 0.5;
+}
+
 .gallery-category .gallery-img img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -3960,6 +3984,38 @@ table p {
   font-size: 2.25rem !important;
   line-height: 1.2em;
   margin-top: 2.5rem;
+}
+
+.gallery-category .gallery-img .fullscreen-hover {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 350ms ease;
+}
+
+@media only screen and (max-width: 1199px) {
+  .gallery-category .gallery-img .fullscreen-hover {
+    font-size: 2rem;
+    top: 2%;
+    left: 2%;
+    opacity: 1;
+    transform: translate(0%, 0%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.3rem;
+    border-radius: 8px;
+  }
+
+  .gallery-category .gallery-img .fullscreen-hover {
+    font-size: 2rem !important;
+  }
+}
+
+.gallery-category .gallery-img:hover .fullscreen-hover {
+  opacity: 1;
+  font-size: 4rem;
 }
 
 /*
