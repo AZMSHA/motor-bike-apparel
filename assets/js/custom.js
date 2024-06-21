@@ -428,30 +428,6 @@
   $(".image-popup").fancybox();
   $(".video-popup").fancybox();
 
-  window.onload = function () {
-    const videoButtons = document.querySelectorAll(".btn-video-player");
-
-    videoButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        const video = document.querySelector(button.dataset.video);
-        if (button.classList.contains("playing")) {
-          button.classList.remove("playing");
-          video.pause();
-        } else {
-          button.classList.add("playing");
-          video.play();
-        }
-      });
-
-      const btnPlayer = button;
-      const videoElement = document.querySelector(button.dataset.video);
-      videoElement.addEventListener("ended", function () {
-        btnPlayer.classList.remove("playing");
-        this.currentTime = 0;
-      });
-    });
-  };
-
   // Aos Js
   AOS.init({
     once: true,
