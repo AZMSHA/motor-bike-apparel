@@ -4463,11 +4463,12 @@ table p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-s .product-item .inner-content .product-info .title a:hover {
+
+.product-item .inner-content .product-info .title a:hover {
   color: var(--custom-orange);
 }
 .product-item .inner-content .product-info .prices {
-  color: var(--prices-color-gray);
+  color: var(--custom-orange);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;

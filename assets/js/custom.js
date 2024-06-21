@@ -274,7 +274,7 @@
   var productSliderDepartments = new Swiper(
     ".product-slider-col4-container-departments",
     {
-      slidesPerView: 6,
+      slidesPerView: 8,
       slidesPerGroup: 1,
       loop: true,
       allowTouchMove: true,
@@ -289,6 +289,10 @@
         prevEl: ".product-swiper-btn-prev",
       },
       breakpoints: {
+        2520: {
+          slidesPerView: 8,
+          spaceBetween: 30,
+        },
         1400: {
           slidesPerView: 5,
           spaceBetween: 30,
@@ -334,7 +338,7 @@
   );
 
   //Slider Galleries Page JS
-  var productSliderDepartments = new Swiper(
+  var productSliderGallery = new Swiper(
     ".product-slider-col4-container-gallery",
     {
       slidesPerView: 6,
