@@ -428,6 +428,9 @@
   $(".image-popup").fancybox();
   $(".video-popup").fancybox();
 
+  //Zoomer Js
+  $(".main-product-display-image").imagezoomsl();
+
   // Aos Js
   AOS.init({
     once: true,
