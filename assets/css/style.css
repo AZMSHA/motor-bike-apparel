@@ -1455,6 +1455,19 @@ table p {
     line-height: 1em;
   }
 }
+.header-top .header-top-align-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-top .header-top-align-start {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+}
 
 .header-middle {
   padding: 8px 0px;
