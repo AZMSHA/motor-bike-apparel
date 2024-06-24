@@ -27,7 +27,8 @@
   --custom-gray-2: rgb(41, 41, 41);
   --footer-sec-color: rgb(41, 41, 41);
   --custom-orange2: rgb(255, 115, 14);
-  --custom-orange: rgb(223, 93, 0);
+  --custom-orange3: rgb(223, 93, 0);
+  --custom-orange: #ff4401;
   --alibaba-orange: #ff6a00;
   --translucent-accent-color: rgba(255, 114, 14, 0.603);
   --widget-bg-color: rgb(240, 240, 240);
@@ -55,7 +56,6 @@
 
 .widget-info.product-cat {
   background: var(--widget-bg-color) none repeat scroll 0 0;
-  height: 302px;
   padding: 15px 20px 20px 10px;
   border-radius: 8px;
 }

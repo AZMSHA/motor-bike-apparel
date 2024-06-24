@@ -48,9 +48,10 @@
   --custom-gray-2: rgb(41, 41, 41);
   --footer-sec-color: rgb(41, 41, 41);
   --custom-orange2: rgb(255, 115, 14);
-  --custom-orange: rgb(223, 93, 0);
+  --custom-orange3: rgb(223, 93, 0);
+  --custom-orange: #ff4401;
   --alibaba-orange: #ff6a00;
-  --translucent-accent-color: rgba(255, 114, 14, 0.603);
+  --translucent-accent-color: #ff450183;
   --widget-bg-color: rgb(240, 240, 240);
 }
 
@@ -295,11 +296,16 @@ table p {
 .company-catalogue.profile-section .profile-section-right,
 .company-catalogue.profile-section .profile-section-center,
 .company-catalogue.profile-section .profile-section-left {
-  img {
-    max-width: 100%;
-  }
   display: flex;
   align-items: center;
+}
+
+.company-catalogue.profile-section .profile-section-center img {
+  max-width: 17rem;
+}
+
+.company-catalogue.profile-section .profile-section-left img {
+  max-width: 22rem;
 }
 
 .company-catalogue.profile-section .profile-section-right {
@@ -1451,8 +1457,9 @@ table p {
 }
 
 .header-middle {
-  padding: 27px 0 26px;
+  padding: 8px 0px;
 }
+
 .header-middle .header-middle-align {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2183,8 +2190,9 @@ table p {
 .header-logo-area a {
   display: block;
 }
-.header-logo-area img {
-  max-width: 20rem;
+
+.logo-main {
+  max-width: 10rem !important;
 }
 .header-logo-area .logo-light {
   display: none;
@@ -11906,6 +11914,11 @@ table p {
 }
 .footer-main .about-widget-wrap {
   margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
 }
 @media only screen and (max-width: 1199px) {
   .footer-main .about-widget-wrap {
@@ -11927,7 +11940,7 @@ table p {
   }
 }
 .footer-main .widget-logo-area {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
 }
 @media only screen and (max-width: 1199px) {
   .footer-main .widget-logo-area {

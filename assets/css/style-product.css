@@ -117,7 +117,8 @@
   --custom-gray-2: rgb(41, 41, 41);
   --footer-sec-color: rgb(41, 41, 41);
   --custom-orange2: rgb(255, 115, 14);
-  --custom-orange: rgb(223, 93, 0);
+  --custom-orange3: rgb(223, 93, 0);
+  --custom-orange: #ff4401;
   --alibaba-orange: #ff6a00;
   --translucent-accent-color: rgba(255, 114, 14, 0.603);
   --widget-bg-color: rgb(240, 240, 240);
