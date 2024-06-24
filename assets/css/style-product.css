@@ -19437,6 +19437,24 @@ textarea.form-control.is-invalid {
   border-radius: 8px;
 }
 
+figure.zoomer {
+  background-position: 50% 50%;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+  border-radius: 8px;
+}
+
+figure.zoomer img:hover {
+  opacity: 0;
+}
+
+figure.zoomer img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+}
+
 .product-single__media.horizontal-thumbnail
   .product-single__image-item
   > a:hover {
