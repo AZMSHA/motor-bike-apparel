@@ -1,0 +1,42 @@
+Additional Requirements:
+product best seller and grid look funky
+Add visitors to footer like lazibsports original website, add whatsapp fixed icon that they can press at bottom
+add fancybox to certificates and departments
+feature area and product item text not looking good on smaller screens
+
+
+when final:
+Add blog link to footer
+product size chart will be image
+add animations
+
+Backend:
+Shouldn't open in pakistan
+Have a banner for every category, that changes whenever a category is clicked with heading which be the  and description and slogon (in logo)
+MOQ: should be able to choose between Pcs/Sets/Pairs
+
+Done:
+feature area not looking good on small screens
+On product Page add a new tab with description called features
+Contact us page, addreses and contact should be bigger, form should be smaller like marjanbikers
+remove reviews
+featured products like marjanbikers on home
+add products grid all like lazibsports.com
+remove catalogue/video section and the section below it and move departments section above best seller section
+Remove Cart from every page
+price and moq should be centered
+Price text: "Price FOB:"
+MOQ text: "MOQ:"
+fix header
+gallery doesnt have padding at bottom
+header right side: alibaba link , email , phone number
+reduce spacing between the products in the best seller area
+slider buttons are moving other sliders as well
+customizer link
+Customizer: Show customization options with images
+
+
+
+
+
+

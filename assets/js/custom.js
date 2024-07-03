@@ -103,7 +103,22 @@
     $("body").removeClass("fix");
   });
 
-  // Swiper Default Slider Js
+  // Product Single Thumb Slider Js
+  var ProductNav = new Swiper(".single-product-nav-slider", {
+    spaceBetween: 21,
+    slidesPerView: 4,
+  });
+  var ProductThumb = new Swiper(".single-product-thumb-slider", {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    thumbs: {
+      swiper: ProductNav,
+    },
+  });
+
+  // Swiper Default Hero Slider Js
   var mainlSlider = new Swiper(".default-slider-container", {
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -125,21 +140,6 @@
     },
   });
 
-  // Product Single Thumb Slider Js
-  var ProductNav = new Swiper(".single-product-nav-slider", {
-    spaceBetween: 21,
-    slidesPerView: 4,
-  });
-  var ProductThumb = new Swiper(".single-product-thumb-slider", {
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-    thumbs: {
-      swiper: ProductNav,
-    },
-  });
-
   // Product Slider Col4 Js
   var productSliderCol4 = new Swiper(".product-slider-col4-container", {
     slidesPerView: 4,
@@ -152,8 +152,8 @@
     spaceBetween: 30,
     speed: 600,
     navigation: {
-      nextEl: ".product-swiper-btn-next",
-      prevEl: ".product-swiper-btn-prev",
+      nextEl: ".default-arrows .product-swiper-btn-next",
+      prevEl: ".default-arrows .product-swiper-btn-prev",
     },
     breakpoints: {
       1400: {
@@ -199,6 +199,68 @@
     },
   });
 
+  // Product Slider Best Seller Col4 Js
+  var productSliderCol4 = new Swiper(
+    ".product-slider-col4-container-best-seller",
+    {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      allowTouchMove: true,
+      autoplay: {
+        delay: 4000,
+        pauseOnMouseEnter: true,
+      },
+      spaceBetween: 8,
+      speed: 600,
+      navigation: {
+        nextEl: ".product-swiper-btn-next.best-seller-arrows",
+        prevEl: ".product-swiper-btn-prev.best-seller-arrows",
+      },
+      breakpoints: {
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 8,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+        },
+      },
+    }
+  );
+
   // Product Categories Slider Col4 Js
   var productSliderCategories = new Swiper(
     ".product-slider-col4-container-categories",
@@ -213,8 +275,8 @@
       spaceBetween: 16,
       speed: 600,
       navigation: {
-        nextEl: ".product-swiper-btn-next",
-        prevEl: ".product-swiper-btn-prev",
+        nextEl: " .categories-arrows .product-swiper-btn-next",
+        prevEl: " .categories-arrows .product-swiper-btn-prev",
       },
       breakpoints: {
         1400: {
@@ -284,10 +346,6 @@
       },
       spaceBetween: 30,
       speed: 600,
-      navigation: {
-        nextEl: ".product-swiper-btn-next",
-        prevEl: ".product-swiper-btn-prev",
-      },
       breakpoints: {
         2520: {
           slidesPerView: 8,
@@ -352,8 +410,8 @@
       spaceBetween: 30,
       speed: 600,
       navigation: {
-        nextEl: ".product-swiper-btn-next",
-        prevEl: ".product-swiper-btn-prev",
+        nextEl: ".gallery-arrows .product-swiper-btn-next",
+        prevEl: ".gallery-arrows .product-swiper-btn-prev",
       },
       breakpoints: {
         1400: {
@@ -399,30 +457,6 @@
       },
     }
   );
-
-  // Product Slider Col4 Js
-  var testimonialSlider = new Swiper(".testimonial-slider-container", {
-    slidesPerView: 2,
-    slidesPerGroup: 1,
-    allowTouchMove: false,
-    spaceBetween: 30,
-    speed: 600,
-    breakpoints: {
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        allowTouchMove: true,
-      },
-    },
-  });
 
   // Fancybox Js
   $(".image-popup").fancybox();
