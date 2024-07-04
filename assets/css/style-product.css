@@ -12115,7 +12115,7 @@ img {
   left: 1.5625rem;
   width: 0;
   height: 2px;
-  background-color: #222222;
+  background-color: var(--custom-orange);
   transition: width 0.36s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 @media (prefers-reduced-motion: reduce) {
@@ -19763,7 +19763,11 @@ figure.zoomer img {
   color: var(--custom-orange);
 }
 
-.product-single-details-tab .nav-link:hover {
+.product-single-details-tab .nav-link.active {
+  color: var(--custom-orange) !important;
+}
+
+.product-single-details-tab .nav-link:hover a {
   color: var(--font-color);
 }
 

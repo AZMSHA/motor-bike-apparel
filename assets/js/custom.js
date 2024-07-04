@@ -124,8 +124,7 @@
     slidesPerGroup: 1,
     loop: true,
     autoplay: {
-      delay: 4000,
-      pauseOnMouseEnter: true,
+      delay: 3000,
     },
     speed: 500,
     spaceBetween: 0,
@@ -146,8 +145,7 @@
     slidesPerGroup: 1,
     allowTouchMove: true,
     autoplay: {
-      delay: 4000,
-      pauseOnMouseEnter: true,
+      delay: 3000,
     },
     spaceBetween: 30,
     speed: 600,
@@ -165,8 +163,7 @@
         spaceBetween: 30,
         allowTouchMove: true,
         autoplay: {
-          delay: 4000,
-          pauseOnMouseEnter: true,
+          delay: 3000,
         },
       },
       992: {
@@ -174,8 +171,7 @@
         spaceBetween: 30,
         allowTouchMove: true,
         autoplay: {
-          delay: 4000,
-          pauseOnMouseEnter: true,
+          delay: 3000,
         },
       },
       576: {
@@ -183,8 +179,7 @@
         spaceBetween: 30,
         allowTouchMove: true,
         autoplay: {
-          delay: 4000,
-          pauseOnMouseEnter: true,
+          delay: 3000,
         },
       },
       0: {
@@ -192,8 +187,7 @@
         spaceBetween: 30,
         allowTouchMove: true,
         autoplay: {
-          delay: 4000,
-          pauseOnMouseEnter: true,
+          delay: 3000,
         },
       },
     },
@@ -203,12 +197,11 @@
   var productSliderCol4 = new Swiper(
     ".product-slider-col4-container-best-seller",
     {
-      slidesPerView: 4,
+      slidesPerView: 1,
       slidesPerGroup: 1,
       allowTouchMove: true,
       autoplay: {
-        delay: 4000,
-        pauseOnMouseEnter: true,
+        delay: 3000,
       },
       spaceBetween: 8,
       speed: 600,
@@ -217,35 +210,44 @@
         prevEl: ".product-swiper-btn-prev.best-seller-arrows",
       },
       breakpoints: {
-        1400: {
-          slidesPerView: 4,
-          spaceBetween: 8,
-        },
-        1200: {
+        1919: {
           slidesPerView: 4,
           spaceBetween: 8,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
-        992: {
+        1399: {
           slidesPerView: 3,
           spaceBetween: 8,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
-        576: {
+        1199: {
+          slidesPerView: 3,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 3000,
+          },
+        },
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 3000,
+          },
+        },
+        767: {
           slidesPerView: 2,
           spaceBetween: 8,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
         0: {
@@ -253,8 +255,60 @@
           spaceBetween: 8,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
+          },
+        },
+      },
+    }
+  );
+
+  // Product Recommended Items Slider Js
+  var productSliderCol4 = new Swiper(
+    ".product-slider-col4-container-recommended-items",
+    {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      allowTouchMove: true,
+      autoplay: {
+        delay: 3000,
+      },
+      spaceBetween: 8,
+      speed: 600,
+      navigation: {
+        nextEl: ".product-swiper-btn-next.recommended-items-arrows",
+        prevEl: ".product-swiper-btn-prev.recommended-items-arrows",
+      },
+      breakpoints: {
+        1199: {
+          slidesPerView: 4,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 3000,
+          },
+        },
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 3000,
+          },
+        },
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 3000,
+          },
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 8,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 3000,
           },
         },
       },
@@ -270,7 +324,6 @@
       allowTouchMove: true,
       autoplay: {
         delay: 2250,
-        pauseOnMouseEnter: true,
       },
       spaceBetween: 16,
       speed: 600,
@@ -289,7 +342,6 @@
           allowTouchMove: true,
           autoplay: {
             delay: 2250,
-            pauseOnMouseEnter: true,
           },
         },
         992: {
@@ -298,7 +350,6 @@
           allowTouchMove: true,
           autoplay: {
             delay: 2250,
-            pauseOnMouseEnter: true,
           },
         },
         734: {
@@ -307,7 +358,6 @@
           allowTouchMove: true,
           autoplay: {
             delay: 2250,
-            pauseOnMouseEnter: true,
           },
         },
         576: {
@@ -316,7 +366,6 @@
           allowTouchMove: true,
           autoplay: {
             delay: 2250,
-            pauseOnMouseEnter: true,
           },
         },
         0: {
@@ -325,7 +374,6 @@
           allowTouchMove: true,
           autoplay: {
             delay: 2250,
-            pauseOnMouseEnter: true,
           },
         },
       },
@@ -341,8 +389,7 @@
       loop: true,
       allowTouchMove: true,
       autoplay: {
-        delay: 4000,
-        pauseOnMouseEnter: true,
+        delay: 3000,
       },
       spaceBetween: 30,
       speed: 600,
@@ -360,8 +407,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
         992: {
@@ -369,8 +415,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
         576: {
@@ -378,8 +423,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
         0: {
@@ -387,8 +431,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
       },
@@ -404,8 +447,7 @@
       loop: true,
       allowTouchMove: true,
       autoplay: {
-        delay: 4000,
-        pauseOnMouseEnter: true,
+        delay: 3000,
       },
       spaceBetween: 30,
       speed: 600,
@@ -423,8 +465,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
         992: {
@@ -432,8 +473,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
         576: {
@@ -441,8 +481,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
         0: {
@@ -450,8 +489,7 @@
           spaceBetween: 30,
           allowTouchMove: true,
           autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
+            delay: 3000,
           },
         },
       },

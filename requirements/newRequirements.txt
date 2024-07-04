@@ -1,21 +1,21 @@
-Additional Requirements:
-product best seller and grid look funky
-Add visitors to footer like lazibsports original website, add whatsapp fixed icon that they can press at bottom
-add fancybox to certificates and departments
-feature area and product item text not looking good on smaller screens
-
-
 when final:
 Add blog link to footer
-product size chart will be image
+size chart on product page will be image
 add animations
+tell customer to register the flag counter with their own email
 
 Backend:
 Shouldn't open in pakistan
-Have a banner for every category, that changes whenever a category is clicked with heading which be the  and description and slogon (in logo)
+Have a banner for every category, that changes whenever a category is clicked with heading which be the and description and slogon (in logo)
 MOQ: should be able to choose between Pcs/Sets/Pairs
 
 Done:
+add fancybox to certificates and departments
+Add visitors to footer like lazibsports original website,
+add whatsapp fixed icon that they can press at bottom,
+fix header items spacing on small screens
+product best seller and grid look funky
+product item text not looking good on smaller screens
 feature area not looking good on small screens
 On product Page add a new tab with description called features
 Contact us page, addreses and contact should be bigger, form should be smaller like marjanbikers
